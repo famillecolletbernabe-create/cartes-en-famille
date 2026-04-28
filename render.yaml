@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cartes-en-famille
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: PORT
+        value: 10000
